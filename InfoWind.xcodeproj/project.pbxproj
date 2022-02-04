@@ -13,7 +13,7 @@
 		55FDC0E327AD43E200B0B203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FDC0E127AD43E200B0B203 /* Main.storyboard */; };
 		55FDC0EC27AD43E200B0B203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDC0EB27AD43E200B0B203 /* AppDelegate.swift */; };
 		55FDC0EF27AD43E200B0B203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FDC0ED27AD43E200B0B203 /* Main.storyboard */; };
-		55FDC0F627AD43E200B0B203 /* InfoWind Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55FDC0F527AD43E200B0B203 /* InfoWind Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55FDC0F627AD43E200B0B203 /* InfoWind Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55FDC0F527AD43E200B0B203 /* InfoWind Extension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55FDC10027AD43E300B0B203 /* InfoWind Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55FDC0FF27AD43E300B0B203 /* InfoWind Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55FDC10627AD43E300B0B203 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 55FDC0C127AD43E000B0B203 /* Main.html */; };
 		55FDC10727AD43E300B0B203 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 55FDC0C127AD43E000B0B203 /* Main.html */; };
@@ -117,6 +117,8 @@
 		55FDC0FF27AD43E300B0B203 /* InfoWind Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InfoWind Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FDC10427AD43E300B0B203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FDC10527AD43E300B0B203 /* InfoWind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InfoWind.entitlements; sourceTree = "<group>"; };
+		55FDC13427AD4A8800B0B203 /* InfoWind (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "InfoWind (iOS).entitlements"; sourceTree = "<group>"; };
+		55FDC13527AD4A8800B0B203 /* InfoWind Extension (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "InfoWind Extension (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,8 @@
 		55FDC0BA27AD43E000B0B203 = {
 			isa = PBXGroup;
 			children = (
+				55FDC13527AD4A8800B0B203 /* InfoWind Extension (iOS).entitlements */,
+				55FDC13427AD4A8800B0B203 /* InfoWind (iOS).entitlements */,
 				55FDC0BF27AD43E000B0B203 /* Shared (App) */,
 				55FDC0C827AD43E200B0B203 /* Shared (Extension) */,
 				55FDC0D927AD43E200B0B203 /* iOS (App) */,
@@ -477,6 +481,7 @@
 /* Begin PBXTargetDependency section */
 		55FDC0F827AD43E200B0B203 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 55FDC0F427AD43E200B0B203 /* InfoWind Extension (iOS) */;
 			targetProxy = 55FDC0F727AD43E200B0B203 /* PBXContainerItemProxy */;
 		};
@@ -637,6 +642,7 @@
 		55FDC12727AD43E300B0B203 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "InfoWind Extension (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJM8829Q7N;
@@ -659,6 +665,7 @@
 				PRODUCT_NAME = "InfoWind Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,6 +675,7 @@
 		55FDC12827AD43E300B0B203 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "InfoWind Extension (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJM8829Q7N;
@@ -690,6 +698,7 @@
 				PRODUCT_NAME = "InfoWind Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -703,6 +712,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "InfoWind (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJM8829Q7N;
@@ -729,6 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokulnair.InfoWind;
 				PRODUCT_NAME = InfoWind;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -741,6 +752,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "InfoWind (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJM8829Q7N;
@@ -767,6 +779,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokulnair.InfoWind;
 				PRODUCT_NAME = InfoWind;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

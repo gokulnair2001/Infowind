@@ -1,10 +1,10 @@
 {
     "extension_name": {
         "message": "InfoWind",
-        "description": "The display name for the extension."
+        "description": "InfoWind, a handy way to know the website!"
     },
     "extension_description": {
-        "message": "This is InfoWind. You should tell us what your extension does here.",
-        "description": "Description of what the extension does."
+        "message": "InfoWind uses the metadata of your website to show a quick info regarding the website and its usage.",
+        "description": "The extension uses the metadata of your website to create a quick info page."
     }
 }
