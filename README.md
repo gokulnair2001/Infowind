@@ -17,10 +17,10 @@ InfoWind is an Open Graph Protocol based Safari extension for iOS, iPadOS & MacO
 * For those who dont know Open Meta Graph Protocol do check [this](https://ogp.me) out!
 
 ## Languages Used 📒
+* Swift
 * JavaScript
 * HTML
 * CSS
-* Swift
 
 ## Learnings 📖
 * This aplication is made using Apple's basic iOS extension development lecture. 
