@@ -1,6 +1,5 @@
 # Infowind 💨
-* InfoWind is an Open Graph Metadata Safari extension for iOS, iPadOS & MacOS devices.
-* The extension uses the metadata of website to show a quick glance of what the website consists of.
+InfoWind is an Open Graph Protocol based Safari extension for iOS, iPadOS & MacOS devices. The extension uses the metadata protocol of website to show a quick glance of what the website consists of.
  
 <img width="898" alt="Screenshot 2022-02-05 at 11 39 25 AM" src="https://user-images.githubusercontent.com/56252259/152630951-e3de3029-c797-479e-bb2d-e594ad434d1a.png">
 
@@ -10,6 +9,10 @@
 * Now you are ready to use it 🚀
 * Go to Safari and open any website and click on extension in toolbar and select infowind
 * Tada its there 🤭
+
+# How InfoWind works ⚙️
+* InfoWind uses the Open Meta Graph protocol to show info of your website on the extension. 
+* For those who dont know Open Meta Graph Protocol do check [this](https://ogp.me) out!
 
 ## Languages Used 📒
 * JavaScript
