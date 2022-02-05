@@ -5,7 +5,7 @@ InfoWind is an Open Graph Protocol based Safari extension for iOS, iPadOS & MacO
 
 **The above given is an example of Github web, the extension works on all websites which follow Open Graph Meta Protocol.**
 
-## How to use InfoWind
+## How to use InfoWind ❓
 * Run the app on your device
 * Go to Settings -> Safari -> Extensions -> InfoWind -> Enable It
 * Now you are ready to use it 🚀
